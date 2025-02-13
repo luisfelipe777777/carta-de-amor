@@ -58,10 +58,11 @@ button:hover {
   background-color: #c0392b; /* Cambio de color al pasar el ratón */
 }
 
-/* Estilo del ícono de San Valentín */
+/* Estilo para la imagen de San Valentín */
 #sanValentinIcon {
   width: 150px; /* Ajusta el tamaño de la imagen */
   margin-top: 20px; /* Asegura que haya espacio entre el botón y la imagen */
   border-radius: 15px; /* Bordes redondeados para la imagen */
 }
+
   

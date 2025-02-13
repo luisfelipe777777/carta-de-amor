@@ -24,7 +24,8 @@ body {
     position: relative;
   }
   
-  .portada {
+ /* Estilo de la portada */
+.portada {
   background-image: url('https://github.com/luisfelipe777777/carta-de-amor/raw/main/sanva.jpg');
   background-size: cover; /* Asegura que la imagen cubra toda la portada */
   background-position: center; /* Centra la imagen */
@@ -41,7 +42,7 @@ body {
     color: #333;
   }
   
-  /* Estilo del botón */
+/* Estilo del botón */
 button {
   background-color: #e74c3c; /* Rojo San Valentín */
   color: white;
@@ -59,13 +60,8 @@ button:hover {
 
 /* Estilo del ícono de San Valentín */
 #sanValentinIcon {
-  width: 25px;
-  margin-right: 10px;
-}
-
-/* Estilo para el texto "San Valentín" y el botón */
-button, #sanValentinIcon {
-  display: inline-block;
-  vertical-align: middle;
+  width: 150px; /* Ajusta el tamaño de la imagen */
+  margin-top: 20px; /* Asegura que haya espacio entre el botón y la imagen */
+  border-radius: 15px; /* Bordes redondeados para la imagen */
 }
   

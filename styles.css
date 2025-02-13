@@ -1,39 +1,15 @@
-/* styles.css */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  .carta-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .carta {
-    width: 300px;
-    height: 400px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    position: relative;
-  }
-  
-/* Estilo de la portada */
+/* Estilo de la portada con imagen de fondo */
 .portada {
-  background-image: url('https://github.com/luisfelipe777777/carta-de-amor/raw/main/nueva-imagen.jpg'); /* Usa la URL correcta de la imagen */
-  background-size: cover; /* Asegura que la imagen cubra todo el área */
+  background-image: url('https://github.com/luisfelipe777777/carta-de-amor/raw/main/imagen-fondo.jpg'); /* Usa la URL correcta de la imagen */
+  background-size: cover; /* Asegura que la imagen cubra toda el área */
   background-position: center; /* Centra la imagen */
   color: white;
-  padding: 40px;
+  padding: 50px;
   text-align: center;
   border-radius: 10px;
   height: 400px; /* Ajusta la altura de la portada */
+  width: 100%; /* Asegura que la portada ocupe todo el ancho disponible */
+  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
 }
 
 /* Estilo del botón */
@@ -50,4 +26,51 @@ button {
 
 button:hover {
   background-color: #c0392b; /* Cambio de color al pasar el ratón */
+}
+
+/* Estilo del ícono de San Valentín (si lo necesitas) */
+#sanValentinIcon {
+  width: 150px; /* Ajusta el tamaño de la imagen */
+  margin-top: 20px; /* Asegura que haya espacio entre el botón y la imagen */
+  border-radius: 15px; /* Bordes redondeados para la imagen */
+}
+
+/* Estilo para el contenido de la carta */
+.carta {
+  background-color: white;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-top: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Estilo del texto dentro de la carta */
+.carta h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.carta p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Estilo para el botón de cerrar la carta */
+#cerrarCartaBtn {
+  background-color: #3498db;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+#cerrarCartaBtn:hover {
+  background-color: #2980b9; /* Cambio de color al pasar el ratón */
 }

@@ -25,14 +25,14 @@ body {
   }
   
   .portada {
-    background-image: url('https://github.com/luisfelipe777777/carta-de-amor/raw/main/sanva.jpg');
-    background-size: cover; /* Hace que la imagen cubra toda el área */
-    background-position: center; /* Centra la imagen */
-    color: white;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px; /* Bordes redondeados */
-  }
+  background-image: url('https://github.com/luisfelipe777777/carta-de-amor/raw/main/sanva.jpg');
+  background-size: cover; /* Asegura que la imagen cubra toda la portada */
+  background-position: center; /* Centra la imagen */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
   
   .mensaje {
     display: none;
@@ -41,18 +41,31 @@ body {
     color: #333;
   }
   
-  button {
-    background-color: #e74c3c; /* Color rojo */
+  /* Estilo del botón */
+button {
+  background-color: #e74c3c; /* Rojo San Valentín */
   color: white;
   padding: 15px;
   border: none;
-  border-radius: 30px; /* Borde redondeado */
+  border-radius: 25px; /* Bordes redondeados */
   cursor: pointer;
   font-size: 18px;
   transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #2980b9;
-  }
+}
+
+button:hover {
+  background-color: #c0392b; /* Cambio de color al pasar el ratón */
+}
+
+/* Estilo del ícono de San Valentín */
+#sanValentinIcon {
+  width: 25px;
+  margin-right: 10px;
+}
+
+/* Estilo para el texto "San Valentín" y el botón */
+button, #sanValentinIcon {
+  display: inline-block;
+  vertical-align: middle;
+}
   

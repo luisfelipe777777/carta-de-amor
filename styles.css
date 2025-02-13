@@ -1,102 +1,119 @@
-/* styles.css */
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f0f0f0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
-
-.carta-container {
-  display: flex;
-  justify-content: center;
-}
-
-.carta {
-  width: 300px;
-  height: 400px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  position: relative;
-}
-
 /* Estilo de la portada con imagen de fondo */
 .portada {
-  background-image: url('https://github.com/luisfelipe777777/carta-de-amor/raw/main/imagen-fondo.jpg'); /* Usa la URL correcta de la imagen */
-  background-size: cover; /* Asegura que la imagen cubra toda el área */
+  background-image: url('https://github.com/luisfelipe777777/carta-de-amor/raw/main/sanva.jpg'); /* Usando la URL correcta */
+  background-size: cover; /* Hace que la imagen cubra toda el área */
   background-position: center; /* Centra la imagen */
   color: white;
-  padding: 50px;
+  padding: 50px 20px; /* Asegura que haya suficiente espacio */
   text-align: center;
   border-radius: 10px;
-  height: 400px; /* Ajusta la altura de la portada */
-  width: 100%; /* Asegura que la portada ocupe todo el ancho disponible */
+  height: 250px; /* Ajusta la altura de la portada */
+  width: 100%;
   box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
+}
+
+/* Añadir un filtro oscuro para mejorar la legibilidad del texto sobre la imagen */
+.portada::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Filtro oscuro */
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.portada h2 {
+  position: relative;
+  z-index: 2;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.portada p {
+  position: relative;
+  z-index: 2;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 /* Estilo del botón */
 button {
-  background-color: #e74c3c; /* Rojo San Valentín */
+  background-color: #e74c3c;
   color: white;
-  padding: 15px;
+  padding: 15px 30px;
   border: none;
-  border-radius: 25px; /* Bordes redondeados */
+  border-radius: 25px;
   cursor: pointer;
   font-size: 18px;
-  transition: background-color 0.3s ease;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-sizing: border-box;
 }
 
 button:hover {
-  background-color: #c0392b; /* Cambio de color al pasar el ratón */
+  background-color: #c0392b;
+  transform: scale(1.05); /* Hace que el botón crezca un poco */
 }
 
-/* Estilo del ícono de San Valentín (si lo necesitas) */
-#sanValentinIcon {
-  width: 150px; /* Ajusta el tamaño de la imagen */
-  margin-top: 20px; /* Asegura que haya espacio entre el botón y la imagen */
-  border-radius: 15px; /* Bordes redondeados para la imagen */
-}
-
-/* Estilo para el contenido de la carta */
+/* Mejoras en la carta y el texto */
 .carta {
-  background-color: white;
-  color: #333;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   padding: 20px;
-  margin-top: 30px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-top: -30px;
 }
 
-/* Estilo del texto dentro de la carta */
 .carta h2 {
   font-size: 28px;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .carta p {
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 /* Estilo para el botón de cerrar la carta */
 #cerrarCartaBtn {
   background-color: #3498db;
   color: white;
-  padding: 15px;
+  padding: 15px 30px;
   border: none;
   border-radius: 25px;
   cursor: pointer;
   font-size: 18px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 #cerrarCartaBtn:hover {
-  background-color: #2980b9; /* Cambio de color al pasar el ratón */
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* Responsividad */
+@media screen and (max-width: 600px) {
+  .carta {
+    max-width: 90%;
+  }
+
+  .portada {
+    padding: 30px 15px;
+  }
+
+  .portada h2 {
+    font-size: 20px;
+  }
+
+  .portada p {
+    font-size: 14px;
+  }
 }

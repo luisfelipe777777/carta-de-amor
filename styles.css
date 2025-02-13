@@ -1,3 +1,29 @@
+/* styles.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.carta-container {
+  display: flex;
+  justify-content: center;
+}
+
+.carta {
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+}
+
 /* Estilo de la portada con imagen de fondo */
 .portada {
   background-image: url('https://github.com/luisfelipe777777/carta-de-amor/raw/main/imagen-fondo.jpg'); /* Usa la URL correcta de la imagen */

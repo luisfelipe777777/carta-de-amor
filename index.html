@@ -3,30 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amada Nicole</title>
+  <title>Carta de San Valentín</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="carta-container">
     <div class="carta">
+      <!-- Portada con imagen de fondo -->
       <div class="portada">
-        <h2>AMADA MÍA</h2>
-        <div>
-          <!-- Icono de San Valentín y el botón -->
-          <img src="https://github.com/luisfelipe777777/carta-de-amor/raw/main/sanva.jpg" alt="San Valentín" id="sanValentinIcon">
-          <button id="abrirCartaBtn">Abrir Carta</button>
-        </div>
-     </div>
-      <div class="mensaje" id="mensajeCarta">
-        <h3>Querida Nicole</h3>
-        <img src="https://github.com/luisfelipe777777/carta-de-amor/raw/main/sanva.jpg" alt="San Valentín" id="sanValentinIcon">
+        <h2>Querida Nicole</h2>
         <p>Mis sentimientos con amor para mi chinita hermosa en este 14 de febrero, te amo <3</p>
-        <p>Con cariño</p>
+        <button id="abrirCartaBtn">Abrir Carta</button>
+      </div>
+
+      <!-- Contenido de la carta (se muestra después de abrir la carta) -->
+      <div class="contenido-carta" style="display: none;">
+        <h2>Querida Nicole</h2>
+        <img src="https://github.com/luisfelipe777777/carta-de-amor/raw/main/sanva.jpg" alt="Imagen San Valentín" class="san-valentin-img">
+        <p>Mis sentimientos con amor para mi chinita hermosa en este 14 de febrero, te amo <3</p>
+        <p>Con cariño,</p>
         <p>Tu chinito</p>
         <button id="cerrarCartaBtn">Cerrar Carta</button>
       </div>
     </div>
   </div>
-  <script src="script.js"></script>
+
+  <script>
+    // JavaScript para abrir y cerrar la carta
+    document.getElementById('abrirCartaBtn').addEventListener('click', function() {
+      document.querySelector('.portada').style.display = 'none'; // Ocultar portada
+      document.querySelector('.contenido-carta').style.display = 'block'; // Mostrar contenido
+    });
+
+    document.getElementById('cerrarCartaBtn').addEventListener('click', function() {
+      document.querySelector('.contenido-carta').style.display = 'none'; // Ocultar contenido
+      document.querySelector('.portada').style.display = 'block'; // Mostrar portada
+    });
+  </script>
 </body>
 </html>

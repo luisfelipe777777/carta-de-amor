@@ -26,23 +26,16 @@ body {
   
 /* Estilo de la portada */
 .portada {
-  background-image: url('https://github.com/luisfelipe777777/carta-de-amor/raw/main/imagen-fondo.jpg');
-  background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+  background-image: url('https://github.com/luisfelipe777777/carta-de-amor/raw/main/nueva-imagen.jpg'); /* Usa la URL correcta de la imagen */
+  background-size: cover; /* Asegura que la imagen cubra todo el área */
   background-position: center; /* Centra la imagen */
   color: white;
-  padding: 50px;
+  padding: 40px;
   text-align: center;
   border-radius: 10px;
   height: 400px; /* Ajusta la altura de la portada */
 }
-  
-  .mensaje {
-    display: none;
-    padding: 20px;
-    background-color: #f4f4f4;
-    color: #333;
-  }
-  
+
 /* Estilo del botón */
 button {
   background-color: #e74c3c; /* Rojo San Valentín */
@@ -58,7 +51,3 @@ button {
 button:hover {
   background-color: #c0392b; /* Cambio de color al pasar el ratón */
 }
-
-
-
-  
